@@ -1,0 +1,72 @@
+04/03/2021 22:00:48:79 - 1000-inicializacao - Inicio
+04/03/2021 22:00:48:80 - 1000-inicializacao - Fim
+04/03/2021 22:00:48:80 - 2000-processamento - Inicio
+04/03/2021 22:00:48:80 - 2100-processa-cidade-csv - Inicio
+04/03/2021 22:00:48:80 - Arquivo C:\Users\luiz.carlos\Desktop\Estudo\TCC\Dados\Interno\log\                                CSBH01001C_CIDADE.CSV                                                                                                                                                 não encontrado
+04/03/2021 22:00:48:80 - 2100-processa-cidade-csv - Final
+04/03/2021 22:00:48:80 - 2000-processamento - Fim
+04/03/2021 22:00:48:80 - 3000-finalizacao - Inicio
+04/03/2021 22:00:48:80 - 3000-finalizacao - Fim
+04/03/2021 22:02:16:96 - 1000-inicializacao - Inicio
+04/03/2021 22:02:16:96 - 1000-inicializacao - Fim
+04/03/2021 22:02:16:96 - 2000-processamento - Inicio
+04/03/2021 22:02:16:96 - 2100-processa-cidade-csv - Inicio
+04/03/2021 22:02:16:96 - Erro - Arquivo: [C:\Users\luiz.carlos\Desktop\Estudo\TCC\Dados\Interno\log\CSBH01001C_CIDADE.CSV                                                                                                                                                                                ] linha 000000002 campo Cidade inválido: Codigo Ci
+04/03/2021 22:02:16:96 - Erro - Arquivo: [C:\Users\luiz.carlos\Desktop\Estudo\TCC\Dados\Interno\log\CSBH01001C_CIDADE.CSV                                                                                                                                                                                ] linha 000000002 campo Cidade inválido: 10
+04/03/2021 22:02:16:96 - 2100-processa-cidade-csv - Final
+04/03/2021 22:02:16:96 - 2000-processamento - Fim
+04/03/2021 22:02:16:96 - 3000-finalizacao - Inicio
+04/03/2021 22:02:16:97 - 3000-finalizacao - Fim
+04/03/2021 22:04:07:96 - 1000-inicializacao - Inicio
+04/03/2021 22:04:07:97 - 1000-inicializacao - Fim
+04/03/2021 22:04:07:97 - 2000-processamento - Inicio
+04/03/2021 22:04:07:97 - 2100-processa-cidade-csv - Inicio
+04/03/2021 22:04:07:97 - ErroC:\Users\luiz.carlos\Desktop\Estudo\TCC\Dados\Interno\log\CSBH01001C_CIDADE.CSV] linha 000000002 campo Cidade inválido: Codigo Ci
+04/03/2021 22:04:07:97 - ErroC:\Users\luiz.carlos\Desktop\Estudo\TCC\Dados\Interno\log\CSBH01001C_CIDADE.CSV] linha 000000002 campo Cidade inválido: 10
+04/03/2021 22:04:07:97 - 2100-processa-cidade-csv - Final
+04/03/2021 22:04:07:97 - 2000-processamento - Fim
+04/03/2021 22:04:07:97 - 3000-finalizacao - Inicio
+04/03/2021 22:04:07:97 - 3000-finalizacao - Fim
+04/03/2021 22:06:29:19 - 1000-inicializacao - Inicio
+04/03/2021 22:06:29:20 - 1000-inicializacao - Fim
+04/03/2021 22:06:29:20 - 2000-processamento - Inicio
+04/03/2021 22:06:29:20 - 2100-processa-cidade-csv - Inicio
+04/03/2021 22:06:29:20 - ErroC:\Users\luiz.carlos\Desktop\Estudo\TCC\Dados\Interno\log\CSBH01001C_CIDADE.CSV] linha 000000002 campo Cidade inválido: 000000000
+04/03/2021 22:06:29:20 - 2100-processa-cidade-csv - Final
+04/03/2021 22:06:29:20 - 2000-processamento - Fim
+04/03/2021 22:06:29:20 - 3000-finalizacao - Inicio
+04/03/2021 22:06:29:21 - 3000-finalizacao - Fim
+04/03/2021 22:07:20:73 - 1000-inicializacao - Inicio
+04/03/2021 22:07:20:74 - 1000-inicializacao - Fim
+04/03/2021 22:07:20:74 - 2000-processamento - Inicio
+04/03/2021 22:07:20:74 - 2100-processa-cidade-csv - Inicio
+04/03/2021 22:07:20:74 - ErroC:\Users\luiz.carlos\Desktop\Estudo\TCC\Dados\Interno\log\CSBH01001C_CIDADE.CSV] linha 000000002 campo Cidade inválido: 000000000
+04/03/2021 22:07:20:74 - 2100-processa-cidade-csv - Final
+04/03/2021 22:07:20:74 - 2000-processamento - Fim
+04/03/2021 22:07:20:74 - 3000-finalizacao - Inicio
+04/03/2021 22:07:20:75 - 3000-finalizacao - Fim
+04/03/2021 22:10:02:80 - 1000-inicializacao - Inicio
+04/03/2021 22:10:02:81 - 1000-inicializacao - Fim
+04/03/2021 22:10:02:81 - 2000-processamento - Inicio
+04/03/2021 22:10:02:81 - 2100-processa-cidade-csv - Inicio
+04/03/2021 22:10:02:81 - 2100-processa-cidade-csv - Final
+04/03/2021 22:10:02:81 - 2000-processamento - Fim
+04/03/2021 22:10:02:81 - 3000-finalizacao - Inicio
+04/03/2021 22:10:02:82 - 3000-finalizacao - Fim
+04/03/2021 22:11:02:25 - 1000-inicializacao - Inicio
+04/03/2021 22:11:02:26 - 1000-inicializacao - Fim
+04/03/2021 22:11:02:26 - 2000-processamento - Inicio
+04/03/2021 22:11:02:26 - 2100-processa-cidade-csv - Inicio
+04/03/2021 22:11:02:26 - 2100-processa-cidade-csv - Final
+04/03/2021 22:11:02:26 - 2000-processamento - Fim
+04/03/2021 22:11:02:26 - 3000-finalizacao - Inicio
+04/03/2021 22:11:02:27 - 3000-finalizacao - Fim
+04/03/2021 22:15:39:99 - 1000-inicializacao - Inicio
+04/03/2021 22:15:39:99 - 1000-inicializacao - Fim
+04/03/2021 22:15:39:99 - 2000-processamento - Inicio
+04/03/2021 22:15:39:99 - 2100-processa-cidade-csv - Inicio
+04/03/2021 22:15:39:99 - Erro - Arquivo: [C:\Users\luiz.carlos\Desktop\Estudo\TCC\Dados\Interno\log\CSBH01001C_CIDADE.CSV] linha 000000002 campo UF ou Descrição Cidade errado
+04/03/2021 22:15:39:99 - 2100-processa-cidade-csv - Final
+04/03/2021 22:15:39:99 - 2000-processamento - Fim
+04/03/2021 22:15:39:99 - 3000-finalizacao - Inicio
+04/03/2021 22:15:40:00 - 3000-finalizacao - Fim
