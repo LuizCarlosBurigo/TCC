@@ -1,0 +1,12 @@
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Infra.deps.json
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Infra.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\ref\CSBHService.Infra.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Infra.pdb
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.csprojAssemblyReference.cache
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.AssemblyInfoInputs.cache
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.AssemblyInfo.cs
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.csproj.CoreCompileInputs.cache
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\ref\CSBHService.Infra.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.pdb

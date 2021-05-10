@@ -1,0 +1,12 @@
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.csprojAssemblyReference.cache
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.AssemblyInfoInputs.cache
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.AssemblyInfo.cs
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\bin\Debug\net5.0\CSBHService.Dominio.deps.json
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\bin\Debug\net5.0\CSBHService.Dominio.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\bin\Debug\net5.0\ref\CSBHService.Dominio.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\bin\Debug\net5.0\CSBHService.Dominio.pdb
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\ref\CSBHService.Dominio.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.pdb
