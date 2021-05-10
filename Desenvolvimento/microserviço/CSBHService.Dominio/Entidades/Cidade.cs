@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSBHService.Dominio.Entidades
 {
-    public class Cidade 
+    public class Cidade : Entidade 
     {
         public Cidade(int codigoCidade, string uf, string descricaoCidade)
         {
