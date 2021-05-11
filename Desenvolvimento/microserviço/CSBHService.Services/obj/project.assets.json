@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Services\\CSBHService.Services.csproj",
-      "projectName": "CSBHService.Services",
-      "projectPath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Services\\CSBHService.Services.csproj",
+      "projectUniqueName": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Services\\CSBHService.Servicos.csproj",
+      "projectName": "CSBHService.Servicos",
+      "projectPath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Services\\CSBHService.Servicos.csproj",
       "packagesPath": "C:\\Users\\luiz.carlos\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Services\\obj\\",
       "projectStyle": "PackageReference",

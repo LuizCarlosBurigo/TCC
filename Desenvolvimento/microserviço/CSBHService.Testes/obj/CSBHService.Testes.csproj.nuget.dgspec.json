@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Testes\\CSBHService.Testes.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Dominio\\CSBHService.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Dominio\\CSBHService.Dominio.csproj",
+        "projectName": "CSBHService.Dominio",
+        "projectPath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Dominio\\CSBHService.Dominio.csproj",
+        "packagesPath": "C:\\Users\\luiz.carlos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luiz.carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\MicroFocus.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Micro Focus\\Visual COBOL\\NuGetPackages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[10.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Testes\\CSBHService.Testes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Testes\\CSBHService.Testes.csproj",
+        "projectName": "CSBHService.Testes",
+        "projectPath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Testes\\CSBHService.Testes.csproj",
+        "packagesPath": "C:\\Users\\luiz.carlos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Testes\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\luiz.carlos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\MicroFocus.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Micro Focus\\Visual COBOL\\NuGetPackages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Dominio\\CSBHService.Dominio.csproj": {
+                "projectPath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Dominio\\CSBHService.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

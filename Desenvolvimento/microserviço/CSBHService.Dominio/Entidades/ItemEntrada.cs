@@ -22,8 +22,8 @@ namespace CSBHService.Dominio.Entidades
         public int CodigoEntrada { get; private set; }
         public int CodigoProduto { get; private set; }
         public int Sequencia { get; private set; }
-        public int Lote { get; private set; }
-        public int Quantidade { get; private set; }
-        public double Frete { get; private set; }
+        public int Lote { get; set; }
+        public int Quantidade { get; set; }
+        public double Frete { get; set; }
     }
 }

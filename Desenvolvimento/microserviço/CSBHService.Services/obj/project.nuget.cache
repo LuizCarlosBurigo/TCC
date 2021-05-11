@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+KZPScxBTOkjobv/kih7DndtxiVoDoofux+rJEHQCLgwEVPjFfBXDlpSthkM62iN0AekqRCsZ9/a/V/rfYjlUg==",
+  "dgSpecHash": "MJEdl+8Rhu21KolMTp0gKpk1kIgbVyFDParkRvzpNAkB/5uATUHqMiAfcG9V7oTXQNRij3fsIg2wVCC+G248RQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Services\\CSBHService.Services.csproj",
+  "projectFilePath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Services\\CSBHService.Servicos.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

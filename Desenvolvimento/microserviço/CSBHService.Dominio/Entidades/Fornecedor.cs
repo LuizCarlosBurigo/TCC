@@ -20,10 +20,10 @@ namespace CSBHService.Dominio.Entidades
             Endereco = endereco;
         }
 
-        public int CodigoFornecedor { get; set; }
-        public string DescricaoFornecedor { get; set; }
-        public string Cnpj { get; set; }
-        public string Email { get; set; }
-        public DescricaoEndereco Endereco { get; set; }
+        public int CodigoFornecedor { get; private set; }
+        public string DescricaoFornecedor { get; private set; }
+        public string Cnpj { get; private set; }
+        public string Email { get; private set; }
+        public DescricaoEndereco Endereco { get; private set; }
     }
 }

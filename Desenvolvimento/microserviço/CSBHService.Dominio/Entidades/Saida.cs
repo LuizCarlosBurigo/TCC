@@ -17,8 +17,8 @@ namespace CSBHService.Dominio.Entidades
 
         public int CodigoSaida { get; private set; }
         public int CodigoTranspotadora { get; private set; }
-        public double Total { get; private set; }
-        public double Frete { get; private set; }
-        public double Imposto { get; private set; }
+        public double Total { get; set; }
+        public double Frete { get; set; }
+        public double Imposto { get; set; }
     }
 }

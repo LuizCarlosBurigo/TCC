@@ -15,6 +15,6 @@ namespace CSBHService.Dominio.Entidades
         public int CodigoTransportadora { get; private set; }
         public string DescricaoTransportadora { get; private set; }
         public string Cnpj { get; private set; }
-        public DescricaoEndereco Endereco { get; set; }
+        public DescricaoEndereco Endereco { get; private set; }
     }
 }

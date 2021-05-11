@@ -17,8 +17,8 @@ namespace CSBHService.Dominio.Entidades
             CodigoTransportadora = codigoTransportadora;
         }
 
-        public int CodigoEntrada { get; set; }
-        public int CodigoTransportadora { get; set; }
+        public int CodigoEntrada { get; private set; }
+        public int CodigoTransportadora { get; private set; }
         public DateTime DataPedido { get; set; }
         public DateTime EntradaPedido { get; set; }
         public double Total { get; set; }
