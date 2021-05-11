@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿
 namespace CSBHService.Dominio.Entidades
 {
     public class Saida : EntidadeLojaBase
