@@ -2,17 +2,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSBHService.Testes.Mocks
 {
     public class CidadeMock
     {
-        private readonly MensagemConsumo _mensagem;
-        private readonly CorpoEntidadeMensagem _conteudo;
-
         public CidadeMock()
         {
             AddMensagens();

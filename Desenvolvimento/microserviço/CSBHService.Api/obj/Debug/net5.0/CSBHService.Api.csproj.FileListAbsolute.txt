@@ -7,7 +7,6 @@ C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Api\bin\Debug\net5.0\CSBHService.Api.dll
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Api\bin\Debug\net5.0\ref\CSBHService.Api.dll
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Api\bin\Debug\net5.0\CSBHService.Api.pdb
-C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Api\obj\Debug\net5.0\CSBHService.Api.csprojAssemblyReference.cache
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Api\obj\Debug\net5.0\CSBHService.Api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Api\obj\Debug\net5.0\CSBHService.Api.AssemblyInfoInputs.cache
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Api\obj\Debug\net5.0\CSBHService.Api.AssemblyInfo.cs

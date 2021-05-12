@@ -19,6 +19,10 @@ namespace CSBHService.Dominio.Validacao.Entidades
             RuleFor(x => x.Cnpj)
                 .Length(14)
                 .WithMessage("CNPJ inválido");
+
+            RuleFor(x => x.Email)
+                .EmailAddress()
+                .WithMessage("Email inválido");
         }
     }
 }

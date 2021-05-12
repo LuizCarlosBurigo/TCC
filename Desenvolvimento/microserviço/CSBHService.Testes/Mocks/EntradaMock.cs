@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace CSBHService.Testes.Mocks
 {
-    public class SaidaMock
+    public class EntradaMock
     {
-        public SaidaMock()
+        public EntradaMock()
         {
             AddMensagens();
         }
@@ -21,9 +21,13 @@ namespace CSBHService.Testes.Mocks
                                                                                                       + "194"
                                                                                                       + "123456789"
                                                                                                       + "123456789"
+                                                                                                      + "20200711"
+                                                                                                      + "20200711"
                                                                                                       + "0000000012,10"
                                                                                                       + "0000000022,10"
-                                                                                                      + "0000000032,10"))));
+                                                                                                      + "123456789"
+                                                                                                      + "123"
+                                                                                                      ))));
         }
     }
 }
