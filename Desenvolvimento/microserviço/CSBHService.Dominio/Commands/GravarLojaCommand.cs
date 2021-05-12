@@ -1,10 +1,6 @@
 ﻿using CSBHService.Dominio.Interfaces.Commands;
 using CSBHService.Dominio.ObjetoValor;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSBHService.Dominio.Commands
 {
@@ -34,7 +30,7 @@ namespace CSBHService.Dominio.Commands
                 var endereco = conteudo.Substring(29, 80);
                 var numero = int.Parse(conteudo.Substring(109, 9));
                 var bairro = conteudo.Substring(118, 80);
-                var cep = conteudo.Substring(198, 14);
+                var cep = conteudo.Substring(198, 8);
                 
                 this.Endereco = new DescricaoEndereco(cdCidade,
                                                       endereco,

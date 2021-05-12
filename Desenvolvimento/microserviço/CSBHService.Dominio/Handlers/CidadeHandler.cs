@@ -2,12 +2,6 @@
 using CSBHService.Dominio.Entidades;
 using CSBHService.Dominio.Interfaces.Commands;
 using CSBHService.Dominio.Validacao.Entidades;
-using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CSBHService.Dominio.Handlers
 {

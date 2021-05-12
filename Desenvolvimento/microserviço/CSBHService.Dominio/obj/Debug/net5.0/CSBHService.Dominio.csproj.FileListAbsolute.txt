@@ -9,3 +9,4 @@ C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.dll
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\ref\CSBHService.Dominio.dll
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.pdb
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Dominio\obj\Debug\net5.0\CSBHService.Dominio.csprojAssemblyReference.cache

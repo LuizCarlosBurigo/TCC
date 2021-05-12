@@ -17,6 +17,7 @@ namespace CSBHService.Dominio.Commands
         public int CodigoFilial { get; private set; }
         public int CodigoSaida { get; private set; }
         public int CodigoProduto { get; private set; }
+        public int Sequencia { get; private set; }
         public int CodigoLote { get; set; }
         public int Quantidade { get; set; }
         public double Valor { get; set; }
@@ -31,9 +32,10 @@ namespace CSBHService.Dominio.Commands
                 this.CodigoFilial = int.Parse(conteudo.Substring(3, 3));
                 this.CodigoSaida = int.Parse(conteudo.Substring(6, 9));
                 this.CodigoProduto = int.Parse(conteudo.Substring(15, 9));
-                this.CodigoLote = int.Parse(conteudo.Substring(24, 09));
-                this.Quantidade = int.Parse(conteudo.Substring(33, 09));
-                this.Valor = double.Parse(conteudo.Substring(42, 13));
+                this.Sequencia = int.Parse(conteudo.Substring(24, 9));
+                this.CodigoLote = int.Parse(conteudo.Substring(33, 09));
+                this.Quantidade = int.Parse(conteudo.Substring(42, 09));
+                this.Valor = double.Parse(conteudo.Substring(51, 13));
                 return true;
             }
             catch
