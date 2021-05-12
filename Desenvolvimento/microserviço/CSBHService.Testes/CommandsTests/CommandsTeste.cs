@@ -17,8 +17,7 @@ namespace CSBHService.Testes.CommandsTest
         private readonly EntradaMock _entradaMock;
         private readonly ItemEntradaMock _itemEntradaMock;
         private readonly ProdutoMock _produtoMock;
-
-
+   
         public CommandsTeste()
         {
             _cidadeMock = new CidadeMock();

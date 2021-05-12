@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace CSBHService.Dominio.Validacao.Entidades
 {
-    public class CidadeValidador : AbstractValidator<Cidade>
+    public class CidadeValidacao : AbstractValidator<Cidade>
     {
-       public CidadeValidador()
+       public CidadeValidacao()
         {
             RuleFor(x => x.CodigoCidade)
                 .GreaterThan(0)

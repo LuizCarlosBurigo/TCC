@@ -1,4 +1,5 @@
 ﻿using CSBHService.Dominio.Interfaces.Commands;
+using CSBHService.Dominio.ObjetoValor;
 
 namespace CSBHService.Dominio.Commands
 {
@@ -9,13 +10,15 @@ namespace CSBHService.Dominio.Commands
 
         }
 
-        public CommandResult(bool success, string message)
+        public CommandResult(bool sucesso, string mensagem, MensagemConsumo objetoRecebido = null)
         {
-            Success = success;
-            Message = message;
+            Sucesso = sucesso;
+            Mensagem = mensagem;
+            ObjetoRecebido = objetoRecebido;
         }
 
-        public bool Success { get; set; }
-        public string Message { get; set; }
+        public bool Sucesso { get; set; }
+        public string Mensagem { get; set; }
+        public MensagemConsumo ObjetoRecebido { get; set; }
     }
 }

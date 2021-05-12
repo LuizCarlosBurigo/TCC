@@ -10,7 +10,7 @@ namespace CSBHService.Dominio.Entidades
         }
 
         public Guid ID { get; private set; }
-        public DateTime TimeStamp { get; private set; }
+        public DateTime TimeStamp { get; set; }
         public DateTime gravacao { get; private set; }
     }
 }

@@ -23,7 +23,7 @@ namespace CSBHService.Dominio.Entidades
         public int CodigoFornecedor { get; private set; }
         public string DescricaoFornecedor { get; private set; }
         public string Cnpj { get; private set; }
-        public string Email { get; private set; }
+        public string Email { get; set; }
         public DescricaoEndereco Endereco { get; private set; }
     }
 }
