@@ -19,6 +19,6 @@ namespace CSBHService.Dominio.Entidades
         public int Sequencia { get; private set; }
         public int Lote { get; set; }
         public int Quantidade { get; set; }
-        public decimal Valor { get; set; }
+        public double Valor { get; set; }
     }
 }

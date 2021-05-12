@@ -15,6 +15,8 @@ namespace CSBHService.Testes.CommandsTest
         private readonly TransportadoraMock _transportadoraMock;
         private readonly FornecedorMock _fornecedorMock;
         private readonly EntradaMock _entradaMock;
+        private readonly ItemEntradaMock _itemEntradaMock;
+        private readonly ProdutoMock _produtoMock;
 
 
         public CommandsTeste()
@@ -26,6 +28,8 @@ namespace CSBHService.Testes.CommandsTest
             _transportadoraMock = new TransportadoraMock();
             _fornecedorMock = new FornecedorMock();
             _entradaMock = new EntradaMock();
+            _itemEntradaMock = new ItemEntradaMock();
+            _produtoMock = new ProdutoMock();
         }
 
         //Executar GravarCidadeCommand
@@ -88,6 +92,24 @@ namespace CSBHService.Testes.CommandsTest
         {
             MensagemConsumo mensagem = (MensagemConsumo)_entradaMock.mensagens[0];
             var comando = new GravarEntradaCommand(mensagem);
+            Assert.IsTrue(comando.Validador());
+        }
+
+        //Executar GravarItemEntradaCommand
+        [TestMethod]
+        public void Testar_GravarItemEntradaCommand()
+        {
+            MensagemConsumo mensagem = (MensagemConsumo)_itemEntradaMock.mensagens[0];
+            var comando = new GravarItemEntradaCommand(mensagem);
+            Assert.IsTrue(comando.Validador());
+        }
+
+        //Executar GravarProdutoCommand
+        [TestMethod]
+        public void Testar_GravarProdutoCommand()
+        {
+            MensagemConsumo mensagem = (MensagemConsumo)_produtoMock.mensagens[0];
+            var comando = new GravarProdutoCommand(mensagem);
             Assert.IsTrue(comando.Validador());
         }
     }
