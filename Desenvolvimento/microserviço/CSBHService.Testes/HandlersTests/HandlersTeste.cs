@@ -1,9 +1,14 @@
 ﻿using CSBHService.Dominio.Commands;
 using CSBHService.Dominio.Handlers;
-using CSBHService.Dominio.Interfaces.Commands;
+using CSBHService.Dominio.Interfaces.Repositorio;
 using CSBHService.Dominio.ObjetoValor;
+using CSBHService.Infra.Data.Repositorios;
+using CSBHService.Infra.InversaoDeControle;
 using CSBHService.Testes.Mocks;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MongoDB.Driver; 
 
 namespace CSBHService.Testes.HandlersTests
 {
@@ -19,7 +24,10 @@ namespace CSBHService.Testes.HandlersTests
         private readonly EntradaMock _entradaMock;
         private readonly ItemEntradaMock _itemEntradaMock;
         private readonly ProdutoMock _produtoMock;
-        private readonly ICommand _command;
+        private readonly ICidadeRepositorio _cidadeRepositorio;
+        private readonly IMongoDatabase _database;
+  
+
 
         public HandlersTeste()
         {
@@ -32,6 +40,13 @@ namespace CSBHService.Testes.HandlersTests
             _entradaMock = new EntradaMock();
             _itemEntradaMock = new ItemEntradaMock();
             _produtoMock = new ProdutoMock();
+            var connerctionString = "mongodb://localhost:27017";
+            var database = "LojaTesteHandler";
+            var cliente = new MongoClient(connerctionString);
+            _database = cliente.GetDatabase(database);
+            _cidadeRepositorio = new CidadeRepositorio(_database);
+
+ 
         }
 
         //Executar CidadeHandler
@@ -40,7 +55,7 @@ namespace CSBHService.Testes.HandlersTests
         {
             MensagemConsumo mensagem = (MensagemConsumo)_cidadeMock.mensagens[0];
             var comando = new GravarCidadeCommand(mensagem);
-            var handler = new CidadeHandler();
+            var handler = new CidadeHandler(_cidadeRepositorio);
             var resultado =(CommandResult) handler.Handle(comando);
             Assert.IsTrue(resultado.Sucesso);
         }

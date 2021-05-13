@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MongoDB.Bson.Serialization.Attributes;
 
 namespace CSBHService.Dominio.Entidades
 {
@@ -14,9 +10,11 @@ namespace CSBHService.Dominio.Entidades
             Uf = uf;
             DescricaoCidade = descricaoCidade;
         }
-
+        [BsonElement("codigo_cidade")]
         public int CodigoCidade { get; private set; }
+        [BsonElement("uf")]
         public string Uf { get; private set; }
+        [BsonElement("descricao_cidade")]
         public string DescricaoCidade { get; private set; }
     }
 }

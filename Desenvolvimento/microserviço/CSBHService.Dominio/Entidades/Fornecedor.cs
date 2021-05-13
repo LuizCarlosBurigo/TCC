@@ -1,9 +1,5 @@
 ﻿using CSBHService.Dominio.ObjetoValor;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace CSBHService.Dominio.Entidades
 {
@@ -19,10 +15,13 @@ namespace CSBHService.Dominio.Entidades
             Cnpj = cnpj;
             Endereco = endereco;
         }
-
+        [BsonElement("codigo_fornecedor")]
         public int CodigoFornecedor { get; private set; }
+        [BsonElement("descricao_fornecedor")]
         public string DescricaoFornecedor { get; private set; }
+        [BsonElement("cnpj")]
         public string Cnpj { get; private set; }
+        [BsonElement("email")]
         public string Email { get; set; }
         public DescricaoEndereco Endereco { get; private set; }
     }

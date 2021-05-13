@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "MJEdl+8Rhu21KolMTp0gKpk1kIgbVyFDParkRvzpNAkB/5uATUHqMiAfcG9V7oTXQNRij3fsIg2wVCC+G248RQ==",
+  "dgSpecHash": "y62Rg16j4JiXKyry+Ip8mMYM4l30M95XSzDqQrZ5OxDyhXUFAExXhBXPMOTNhV/jERR9oGdAM/HAmRU2bKc63g==",
   "success": true,
   "projectFilePath": "C:\\Users\\luiz.carlos\\source\\repos\\TCC\\Desenvolvimento\\microserviço\\CSBHService.Services\\CSBHService.Servicos.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\luiz.carlos\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\luiz.carlos\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\luiz.carlos\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\luiz.carlos\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\luiz.carlos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\luiz.carlos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
   "logs": []
 }

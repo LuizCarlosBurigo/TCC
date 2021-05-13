@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace CSBHService.Dominio.ObjetoValor
@@ -19,12 +20,17 @@ namespace CSBHService.Dominio.ObjetoValor
             Cep = cep;
             _telefones = new List<Telefone>();
         }
-
+        [BsonElement("codigo_cidade")]
         public int CodigoCidade { get; private set; }
+        [BsonElement("endereco")]
         public string Endereco { get; private set; }
+        [BsonElement("numero")]
         public int Numero { get; private set; }
+        [BsonElement("bairro")]
         public string Bairro { get; private set; }
+        [BsonElement("cep")]
         public string Cep { get; private set; }
+        [BsonElement("telefones")]
         public IReadOnlyCollection<Telefone> Telefones => _telefones.ToArray();
 
         public void AddTelefone(Telefone novoTelefone)

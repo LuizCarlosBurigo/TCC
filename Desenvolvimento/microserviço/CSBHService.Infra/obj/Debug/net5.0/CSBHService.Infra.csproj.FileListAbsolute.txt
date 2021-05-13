@@ -9,3 +9,10 @@ C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.dll
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\ref\CSBHService.Infra.dll
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.pdb
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\snappy32.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\snappy64.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\libzstd.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Dominio.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Dominio.pdb
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.csprojAssemblyReference.cache
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.csproj.CopyComplete

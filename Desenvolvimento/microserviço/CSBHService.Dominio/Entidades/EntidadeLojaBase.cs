@@ -1,4 +1,4 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
 
 namespace CSBHService.Dominio.Entidades
 {
@@ -9,8 +9,9 @@ namespace CSBHService.Dominio.Entidades
             CodigoEmpresa = codigoEmpresa;
             CodigoFilial = codigoFilial;
         }
-
+        [BsonElement("codigo_empresa")]
         public int CodigoEmpresa { get; private set; }
+        [BsonElement("codigo_filial")]
         public int CodigoFilial { get; private set; }
     }
 }

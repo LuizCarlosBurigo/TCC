@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,14 +17,21 @@ namespace CSBHService.Dominio.Entidades
             CodigoEntrada = codigoEntrada;
             CodigoTransportadora = codigoTransportadora;
         }
-
+        [BsonElement("codigo_entrada")]
         public int CodigoEntrada { get; private set; }
+        [BsonElement("codigo_transportadora")]
         public int CodigoTransportadora { get; private set; }
+        [BsonElement("data_pedido")]
         public DateTime DataPedido { get; set; }
+        [BsonElement("data_entrada_pedido")]
         public DateTime EntradaPedido { get; set; }
+        [BsonElement("total")]
         public double Total { get; set; }
+        [BsonElement("frete")]
         public double Frete { get; set; }
+        [BsonElement("nota_fiscal")]
         public int NumeroNotaFiscal { get; set; }
+        [BsonElement("serie_nota_fiscal")]
         public int SerieNotaFiscal { get; set; }
 
     }

@@ -1,4 +1,5 @@
 ﻿using CSBHService.Dominio.ObjetoValor;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace CSBHService.Dominio.Entidades
 {
@@ -10,7 +11,7 @@ namespace CSBHService.Dominio.Entidades
             Cnpj = cnpj;
             Endereco = endereco;
         }
-
+        [BsonElement("cnpj")]
         public string Cnpj { get; private set; }
         public DescricaoEndereco Endereco { get; private set; }
     }

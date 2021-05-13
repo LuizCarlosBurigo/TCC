@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MongoDB.Bson.Serialization.Attributes;
 
 namespace CSBHService.Dominio.ObjetoValor
 {
@@ -13,8 +9,9 @@ namespace CSBHService.Dominio.ObjetoValor
             Ddd = ddd;
             this.numero = numero;
         }
-
+        [BsonElement("ddd")]
         public int Ddd { get; set; }
+        [BsonElement("numero_telefone")]
         public int numero { get; set; }
     }
 }
