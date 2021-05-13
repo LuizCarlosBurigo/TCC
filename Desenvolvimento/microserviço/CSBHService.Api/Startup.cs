@@ -25,12 +25,9 @@ namespace CSBHService.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMongo(Configuration);
-            services.AddScoped<ICidadeRepositorio, CidadeRepositorio>();
+            services.AddServices();
             services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TreinamentoWeb", Version = "v1" });
-            });
+            services.AddSwagger(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

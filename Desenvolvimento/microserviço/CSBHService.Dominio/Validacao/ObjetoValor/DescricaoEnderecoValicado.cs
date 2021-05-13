@@ -27,7 +27,7 @@ namespace CSBHService.Dominio.Validacao.ObjetoValor
 
             RuleFor(x => x.Endereco)
                 .MinimumLength(5)
-                .MinimumLength(80)
+                .MaximumLength(80)
                 .WithMessage("Descrição Endereço inválida");
 
             RuleFor(x => x.Numero)

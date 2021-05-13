@@ -26,7 +26,9 @@ namespace CSBHService.Dominio.Commands
                 this.TimeStamp = this.Mensagem.TimeStamp;
                 this.CodigoCidade = int.Parse(conteudo.Substring(0, 9));
                 this.Uf = conteudo.Substring(9, 9);
+                this.Uf = this.Uf.TrimStart().TrimEnd();
                 this.DescricaoCidade = conteudo.Substring(18, campoFinal);
+                this.DescricaoCidade = this.DescricaoCidade.TrimStart().TrimEnd();
                 return true;
             }
             catch

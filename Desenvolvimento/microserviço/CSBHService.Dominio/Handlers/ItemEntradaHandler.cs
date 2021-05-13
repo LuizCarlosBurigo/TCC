@@ -1,12 +1,20 @@
 ﻿using CSBHService.Dominio.Commands;
 using CSBHService.Dominio.Entidades;
 using CSBHService.Dominio.Interfaces.Commands;
+using CSBHService.Dominio.Interfaces.Repositorio;
 using CSBHService.Dominio.Validacao.Entidades;
 
 namespace CSBHService.Dominio.Handlers
 {
     public class ItemEntradaHandler : Handler<GravarItemEntradaCommand>
     {
+        private readonly IItemEntradaRepositorio _itemEntradaRepositorio;
+
+        public ItemEntradaHandler(IItemEntradaRepositorio itemEntradaRepositorio)
+        {
+            _itemEntradaRepositorio = itemEntradaRepositorio;
+        }
+
         public override ICommandResult Handle(GravarItemEntradaCommand command)
         {
             //Fail Fast Validations
@@ -36,9 +44,15 @@ namespace CSBHService.Dominio.Handlers
             }
 
             //Salvar informações
-            //Implementar
-            //Retornar informações
-            return new CommandResult(true, "Mensagem persistida com sucesso");
+            try
+            {
+                _itemEntradaRepositorio.InseririOuAtualizar(itemEntrada);
+                return new CommandResult(true, "Mensagem persistida com sucesso");
+            }
+            catch
+            {
+                return new CommandResult(false, "Ocorreu um erro interno no sistema", command.Mensagem);
+            }
         }
     }
 }

@@ -24,10 +24,17 @@ namespace CSBHService.Testes.HandlersTests
         private readonly EntradaMock _entradaMock;
         private readonly ItemEntradaMock _itemEntradaMock;
         private readonly ProdutoMock _produtoMock;
-        private readonly ICidadeRepositorio _cidadeRepositorio;
         private readonly IMongoDatabase _database;
+        private readonly ICidadeRepositorio _cidadeRepositorio;
+        private readonly IEntradaRepositorio _entradaRepositorio;
+        private readonly IFornecedorRepositorio _fornecedorRepositorio;
+        private readonly IItemEntradaRepositorio _itemEntradaRepositorio;
+        private readonly IItemSaidaRepositorio _itemSaidaRepositorio;
+        private readonly ILojaRepositorio _lojaRepositorio;
+        private readonly IProdutoRepositorio _produtoRepositorio;
+        private readonly ITransportadoraRepositorio _transportadoraRepositorio;
+        private readonly ISaidaRepositorio _saidaRepositorio;
   
-
 
         public HandlersTeste()
         {
@@ -45,8 +52,14 @@ namespace CSBHService.Testes.HandlersTests
             var cliente = new MongoClient(connerctionString);
             _database = cliente.GetDatabase(database);
             _cidadeRepositorio = new CidadeRepositorio(_database);
-
- 
+            _entradaRepositorio = new EntradaRepositorio(_database);
+            _fornecedorRepositorio = new FornecedorRepositorio(_database);
+            _itemEntradaRepositorio = new ItemEntradaRepositorio(_database);
+            _itemSaidaRepositorio = new ItemSaidaRepositorio(_database);
+            _lojaRepositorio = new LojaRepositorio(_database);
+            _produtoRepositorio = new ProdutoRepositorio(_database);
+            _transportadoraRepositorio = new TransportadoraRepositorio(_database);
+            _saidaRepositorio = new SaidaRepositorio(_database);
         }
 
         //Executar CidadeHandler
@@ -66,7 +79,7 @@ namespace CSBHService.Testes.HandlersTests
         {
             MensagemConsumo mensagem = (MensagemConsumo)_entradaMock.mensagens[0];
             var comando = new GravarEntradaCommand(mensagem);
-            var handler = new EntradaHandler();
+            var handler = new EntradaHandler(_entradaRepositorio);
             var resultado = (CommandResult)handler.Handle(comando);
             Assert.IsTrue(resultado.Sucesso);
         }
@@ -77,7 +90,7 @@ namespace CSBHService.Testes.HandlersTests
         {
             MensagemConsumo mensagem = (MensagemConsumo)_fornecedorMock.mensagens[0];
             var comando = new GravarFornecedorCommand(mensagem);
-            var handler = new FornecedorHandler();
+            var handler = new FornecedorHandler(_fornecedorRepositorio);
             var resultado = (CommandResult)handler.Handle(comando);
             Assert.IsTrue(resultado.Sucesso);
         }
@@ -88,7 +101,7 @@ namespace CSBHService.Testes.HandlersTests
         {
             MensagemConsumo mensagem = (MensagemConsumo)_itemEntradaMock.mensagens[0];
             var comando = new GravarItemEntradaCommand(mensagem);
-            var handler = new ItemEntradaHandler();
+            var handler = new ItemEntradaHandler(_itemEntradaRepositorio);
             var resultado = (CommandResult)handler.Handle(comando);
             Assert.IsTrue(resultado.Sucesso);
         }
@@ -99,7 +112,7 @@ namespace CSBHService.Testes.HandlersTests
         {
             MensagemConsumo mensagem = (MensagemConsumo)_itemSaidaMock.mensagens[0];
             var comando = new GravarItemSaidaCommand(mensagem);
-            var handler = new ItemSaidaHandler();
+            var handler = new ItemSaidaHandler(_itemSaidaRepositorio);
             var resultado = (CommandResult)handler.Handle(comando);
             Assert.IsTrue(resultado.Sucesso);
         }
@@ -110,7 +123,7 @@ namespace CSBHService.Testes.HandlersTests
         {
             MensagemConsumo mensagem = (MensagemConsumo)_lojaMock.mensagens[0];
             var comando = new GravarLojaCommand(mensagem);
-            var handler = new LojaHandler();
+            var handler = new LojaHandler(_lojaRepositorio);
             var resultado = (CommandResult)handler.Handle(comando);
             Assert.IsTrue(resultado.Sucesso);
         }
@@ -121,7 +134,7 @@ namespace CSBHService.Testes.HandlersTests
         {
             MensagemConsumo mensagem = (MensagemConsumo)_produtoMock.mensagens[0];
             var comando = new GravarProdutoCommand(mensagem);
-            var handler = new ProdutoHandler();
+            var handler = new ProdutoHandler(_produtoRepositorio);
             var resultado = (CommandResult)handler.Handle(comando);
             Assert.IsTrue(resultado.Sucesso);
         }
@@ -132,7 +145,7 @@ namespace CSBHService.Testes.HandlersTests
         {
             MensagemConsumo mensagem = (MensagemConsumo)_transportadoraMock.mensagens[0];
             var comando = new GravarTransportadoraCommand(mensagem);
-            var handler = new TransportadoraHandler();
+            var handler = new TransportadoraHandler(_transportadoraRepositorio);
             var resultado = (CommandResult)handler.Handle(comando);
             Assert.IsTrue(resultado.Sucesso);
         }
@@ -143,7 +156,7 @@ namespace CSBHService.Testes.HandlersTests
         {
             MensagemConsumo mensagem = (MensagemConsumo)_saidaMock.mensagens[0];
             var comando = new GravarSaidaCommand(mensagem);
-            var handler = new SaidaHandler();
+            var handler = new SaidaHandler(_saidaRepositorio);
             var resultado = (CommandResult)handler.Handle(comando);
             Assert.IsTrue(resultado.Sucesso);
         }

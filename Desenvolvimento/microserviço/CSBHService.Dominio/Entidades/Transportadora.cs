@@ -21,6 +21,7 @@ namespace CSBHService.Dominio.Entidades
         public string Cnpj { get; private set; }
         [BsonElement("email")]
         public string Email { get; private set; }
+        [BsonElement("dados_endereco")]
         public DescricaoEndereco Endereco { get; private set; }
     }
 }

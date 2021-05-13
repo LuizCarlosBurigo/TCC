@@ -3,11 +3,20 @@ using CSBHService.Dominio.Validacao.ObjetoValor;
 using CSBHService.Dominio.Commands;
 using CSBHService.Dominio.Entidades;
 using CSBHService.Dominio.Validacao.Entidades;
+using CSBHService.Dominio.Interfaces.Repositorio;
 
 namespace CSBHService.Dominio.Handlers
 {
     public class TransportadoraHandler : Handler<GravarTransportadoraCommand>
     {
+
+        private readonly ITransportadoraRepositorio _transportadoraRepositorio;
+
+        public TransportadoraHandler(ITransportadoraRepositorio transportadoraRepositorio)
+        {
+            _transportadoraRepositorio = transportadoraRepositorio;
+        }
+
         public override ICommandResult Handle(GravarTransportadoraCommand command)
         {
             //Fail Fast Validations
@@ -42,9 +51,15 @@ namespace CSBHService.Dominio.Handlers
             }
 
             //Salvar informações
-            //Implementar
-            //Retornar informações
-            return new CommandResult(true, "Mensagem persistida com sucesso");
+            try
+            {
+                _transportadoraRepositorio.InseririOuAtualizar(transportadora);
+                return new CommandResult(true, "Mensagem persistida com sucesso");
+            }
+            catch
+            {
+                return new CommandResult(false, "Ocorreu um erro interno no sistema", command.Mensagem);
+            }
         }
     }
 }

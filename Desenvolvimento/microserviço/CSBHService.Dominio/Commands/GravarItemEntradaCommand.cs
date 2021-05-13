@@ -33,9 +33,9 @@ namespace CSBHService.Dominio.Commands
                 this.CodigoEntrada = int.Parse(conteudo.Substring(6, 9));
                 this.CodigoProduto = int.Parse(conteudo.Substring(15, 9));
                 this.Sequencia = int.Parse(conteudo.Substring(24, 09));
-                this.Frete = double.Parse(conteudo.Substring(33, 13));
-                this.Quantidade = int.Parse(conteudo.Substring(46, 9));
-                this.Frete = double.Parse(conteudo.Substring(55, 13));
+                this.Lote = int.Parse(conteudo.Substring(33, 9));
+                this.Quantidade = int.Parse(conteudo.Substring(42, 9));
+                this.Frete = double.Parse(conteudo.Substring(51, 13));
                 return true;
             }
             catch

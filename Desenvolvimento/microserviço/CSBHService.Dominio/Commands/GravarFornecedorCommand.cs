@@ -30,12 +30,16 @@ namespace CSBHService.Dominio.Commands
                 this.CodigoFornecedor = int.Parse(conteudo.Substring(0, 9));
                 var cdCidade = int.Parse(conteudo.Substring(9, 9));
                 this.DescricaoFornecedor = conteudo.Substring(18, 80);
+                this.DescricaoFornecedor = this.DescricaoFornecedor.TrimStart().TrimEnd();
                 this.Cnpj = conteudo.Substring(98, 14);
                 var endereco = conteudo.Substring(112, 80);
+                endereco = endereco.TrimStart().TrimEnd();
                 var numero = int.Parse(conteudo.Substring(192, 9));
                 var bairro = conteudo.Substring(201, 80);
+                bairro = bairro.TrimStart().TrimEnd();
                 var cep = conteudo.Substring(281, 08);
                 var email = conteudo.Substring(301, campoFinal);
+                email = email.TrimStart().TrimEnd();
                 this.Endereco = new DescricaoEndereco(cdCidade,
                                                       endereco,
                                                       numero,

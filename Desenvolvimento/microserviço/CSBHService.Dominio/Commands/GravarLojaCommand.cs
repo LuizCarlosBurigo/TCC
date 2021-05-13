@@ -28,8 +28,10 @@ namespace CSBHService.Dominio.Commands
                 this.Cnpj = conteudo.Substring(6, 14);
                 var cdCidade = int.Parse(conteudo.Substring(20, 9));
                 var endereco = conteudo.Substring(29, 80);
+                endereco = endereco.TrimStart().TrimEnd();
                 var numero = int.Parse(conteudo.Substring(109, 9));
-                var bairro = conteudo.Substring(118, 80);
+                var bairro = conteudo.Substring(118, 80).TrimStart().TrimEnd();
+                bairro = bairro.TrimStart().TrimEnd();
                 var cep = conteudo.Substring(198, 8);
                 
                 this.Endereco = new DescricaoEndereco(cdCidade,

@@ -6,8 +6,8 @@ namespace CSBHService.Dominio.Interfaces.Repositorio
     public interface IBaseRepository<TEntity> 
         where TEntity : Entidade
     {
-        Task<TEntity> InseririOuAtualizar(TEntity enentidade);
+        Task<TEntity> InseririOuAtualizar(TEntity entidade);
 
-        Task Excluir(TEntity enentidade);
+        Task Excluir(TEntity entidade);
     }
 }

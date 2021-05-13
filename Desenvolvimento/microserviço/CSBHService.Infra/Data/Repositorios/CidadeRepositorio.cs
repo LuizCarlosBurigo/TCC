@@ -16,17 +16,6 @@ namespace CSBHService.Infra.Data.Repositorios
         public CidadeRepositorio(IMongoDatabase database) =>
             _contexto = new MongoContext<Cidade>(database, "cidade");
 
-        public async Task Excluir(Cidade cidade)
-        {
-            Expression<Func<Cidade, bool>> filtro = x =>
-                x.CodigoCidade == cidade.CodigoCidade &&
-                x.Uf == cidade.Uf &&
-                x.DescricaoCidade == cidade.DescricaoCidade;
-
-            await _contexto.Collection.DeleteOneAsync(filtro);
-
-        }
-
         public async Task<Cidade> InseririOuAtualizar(Cidade cidade)
         {
             Expression<Func<Cidade, bool>> filtro = x =>
@@ -38,11 +27,22 @@ namespace CSBHService.Infra.Data.Repositorios
 
             if (novaCidade != null)
             {
-                await _contexto.Collection.ReplaceOneAsync(filtro, novaCidade);
+                await _contexto.Collection.ReplaceOneAsync(filtro, cidade);
                 return cidade;
             }
             await _contexto.Collection.InsertOneAsync(cidade);
             return cidade;
+        }
+
+        public async Task Excluir(Cidade cidade)
+        {
+            Expression<Func<Cidade, bool>> filtro = x =>
+                x.CodigoCidade == cidade.CodigoCidade &&
+                x.Uf == cidade.Uf &&
+                x.DescricaoCidade == cidade.DescricaoCidade;
+
+            await _contexto.Collection.DeleteOneAsync(filtro);
+
         }
     }
 }

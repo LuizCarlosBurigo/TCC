@@ -21,3 +21,9 @@ C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Services\obj\Debug\net5.0\CSBHService.Servicos.pdb
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Services\obj\Debug\net5.0\CSBHService.Servicos.genruntimeconfig.cache
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Services\obj\Debug\net5.0\CSBHService.Servicos.csprojAssemblyReference.cache
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Services\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Services\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Services\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Services\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Services\obj\Debug\net5.0\CSBHService.Servicos.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Services\obj\Debug\net5.0\CSBHService.Servicos.csproj.CopyComplete
