@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSBHService.Infra.Consumidores
 {
-    class LojaConsumidor : IConsumer<LojaMensagem>
+    public class LojaConsumidor : IConsumer<LojaMensagem>
     {
         private readonly ILojaServico _lojaServico;
 

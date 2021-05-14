@@ -2,7 +2,6 @@
 using CSBHService.Dominio.Handlers;
 using CSBHService.Dominio.Interfaces.Repositorio;
 using CSBHService.Dominio.Interfaces.Servico;
-using CSBHService.Dominio.ModelosMensagem;
 using CSBHService.Dominio.ObjetoValor;
 using System.Threading.Tasks;
 

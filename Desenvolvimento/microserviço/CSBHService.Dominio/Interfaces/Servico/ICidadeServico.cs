@@ -1,5 +1,4 @@
-﻿
-using CSBHService.Dominio.ObjetoValor;
+﻿using CSBHService.Dominio.ObjetoValor;
 
 namespace CSBHService.Dominio.Interfaces.Servico
 {
