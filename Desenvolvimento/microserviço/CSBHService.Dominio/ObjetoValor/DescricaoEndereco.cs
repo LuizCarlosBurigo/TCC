@@ -6,7 +6,7 @@ namespace CSBHService.Dominio.ObjetoValor
 {
     public class DescricaoEndereco
     {
-        private IList<Telefone> _telefones;
+        private readonly IList<Telefone> _telefones;
         public DescricaoEndereco(int codigoCidade, 
                                  string endereco, 
                                  int numero, 

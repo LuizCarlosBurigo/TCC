@@ -1,13 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CSBHService.Infra.InversaoDeControle;
-using Microsoft.OpenApi.Models;
-using CSBHService.Dominio.Interfaces.Repositorio;
-using CSBHService.Infra.Data.Repositorios;
 
 namespace CSBHService.Api
 {
@@ -26,6 +22,7 @@ namespace CSBHService.Api
         {
             services.AddMongo(Configuration);
             services.AddServices();
+            services.AddConsumidor();
             services.AddControllers();
             services.AddSwagger(); 
         }
@@ -44,7 +41,6 @@ namespace CSBHService.Api
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapRazorPages();
                 endpoints.MapControllers();
             });
         }

@@ -16,3 +16,11 @@ C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Dominio.pdb
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.csprojAssemblyReference.cache
 C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\obj\Debug\net5.0\CSBHService.Infra.csproj.CopyComplete
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Servicos.deps.json
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Servicos.runtimeconfig.json
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Servicos.runtimeconfig.dev.json
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\appsettings.json
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Servicos.exe
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Servicos.dll
+C:\Users\luiz.carlos\source\repos\TCC\Desenvolvimento\microserviço\CSBHService.Infra\bin\Debug\net5.0\CSBHService.Servicos.pdb

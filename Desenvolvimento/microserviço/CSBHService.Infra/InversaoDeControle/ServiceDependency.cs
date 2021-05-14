@@ -1,13 +1,16 @@
 ﻿using CSBHService.Dominio.Commands;
 using CSBHService.Dominio.Interfaces.Commands;
 using CSBHService.Dominio.Interfaces.Repositorio;
+using CSBHService.Dominio.Interfaces.Servico;
 using CSBHService.Infra.Data.Repositorios;
+using CSBHService.Servicos.Servicos;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace CSBHService.Infra.InversaoDeControle
 {
     public static class ServiceDependency
     {
+
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<ICidadeRepositorio, CidadeRepositorio>();
@@ -20,6 +23,9 @@ namespace CSBHService.Infra.InversaoDeControle
             services.AddScoped<ISaidaRepositorio, SaidaRepositorio>();
             services.AddScoped<ITransportadoraRepositorio, TransportadoraRepositorio>();
             services.AddScoped<ICommandResult, CommandResult>();
+            services.AddScoped<ICidadeServico, CidadeServico>();
+            services.AddScoped<ILojaServico, LojaServico>();
+            
         }
     }
 }

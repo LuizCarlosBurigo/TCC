@@ -49,6 +49,10 @@
               "target": "Package",
               "version": "[10.1.0, )"
             },
+            "MassTransit": {
+              "target": "Package",
+              "version": "[7.1.8, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.12.3, )"

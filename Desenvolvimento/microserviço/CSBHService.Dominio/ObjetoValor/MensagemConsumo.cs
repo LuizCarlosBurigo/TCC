@@ -1,9 +1,10 @@
-﻿using System;
+﻿using CSBHService.Dominio.Interfaces.Consumidor;
+using System;
 using System.Collections.Generic;
 
 namespace CSBHService.Dominio.ObjetoValor
 {
-    public class MensagemConsumo
+    public class MensagemConsumo : IMensagemConsumidor
     {
         public MensagemConsumo(DateTime timeStamp, string arquivo, string acao, CorpoEntidadeMensagem corpo)
         {
