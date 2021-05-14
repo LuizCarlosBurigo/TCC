@@ -22,14 +22,18 @@ namespace CSBHService.Infra.Data.Repositorios
                 x.CodigoFornecedor == fornecedor.CodigoFornecedor &&
                 x.Endereco.CodigoCidade == fornecedor.Endereco.CodigoCidade;
 
-            Fornecedor novaFornecedor = _contexto.Collection.Find(filtro).FirstOrDefault();
+            var updateDefenition = Builders<Fornecedor>.Update
+                .SetOnInsert(x => x.CodigoFornecedor, fornecedor.CodigoFornecedor)
+                .Set(x => x.DescricaoFornecedor, fornecedor.DescricaoFornecedor)
+                .Set(x => x.Cnpj, fornecedor.Cnpj)
+                .Set(x => x.Email, fornecedor.Email)
+                .Set(x => x.Endereco, fornecedor.Endereco);
 
-            if (novaFornecedor != null)
+            await _contexto.Collection.UpdateOneAsync(filtro, updateDefenition, new UpdateOptions
             {
-                await _contexto.Collection.ReplaceOneAsync(filtro, fornecedor);
-                return fornecedor;
-            }
-            await _contexto.Collection.InsertOneAsync(fornecedor);
+                IsUpsert = true
+
+            });
             return fornecedor;
         }
 

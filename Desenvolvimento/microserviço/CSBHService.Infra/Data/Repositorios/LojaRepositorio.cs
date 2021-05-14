@@ -5,6 +5,7 @@ using System;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using MongoDB.Driver;
+using MongoDB.Bson;
 
 namespace CSBHService.Infra.Data.Repositorios
 {
@@ -23,13 +24,32 @@ namespace CSBHService.Infra.Data.Repositorios
                 x.CodigoFilial == loja.CodigoFilial;
 
             Loja novaLoja = _contexto.Collection.Find(filtro).FirstOrDefault();
-
+            
             if (novaLoja != null)
             {
-                await _contexto.Collection.ReplaceOneAsync(filtro, loja);
-                return loja;
+                foreach (var telefone in loja.Endereco.Telefones)
+                {
+                    novaLoja.Endereco.AddTelefone(telefone);
+                }
             }
-            await _contexto.Collection.InsertOneAsync(loja);
+            else
+            {
+                novaLoja = loja;
+            }
+
+            var updateDefenition = Builders<Loja>.Update
+                .SetOnInsert(x => x.CodigoEmpresa, novaLoja.CodigoEmpresa)
+                .Set(x => x.CodigoFilial, novaLoja.CodigoFilial)
+                .Set(x => x.TimeStamp, novaLoja.TimeStamp)
+                .Set(x => x.gravacao, novaLoja.gravacao)
+                .Set(x => x.Cnpj, novaLoja.Cnpj)
+                .Set(x => x.Endereco, novaLoja.Endereco);
+
+            await _contexto.Collection.UpdateOneAsync(filtro, updateDefenition, new UpdateOptions
+            {
+                IsUpsert = true
+
+            });
             return loja;
         }
 

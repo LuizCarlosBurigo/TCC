@@ -22,14 +22,18 @@ namespace CSBHService.Infra.Data.Repositorios
                 x.CodigoTransportadora == transportadora.CodigoTransportadora &&
                 x.Endereco.CodigoCidade == transportadora.Endereco.CodigoCidade;
 
-            Transportadora novaTransportadora = _contexto.Collection.Find(filtro).FirstOrDefault();
+            var updateDefenition = Builders<Transportadora>.Update
+                .SetOnInsert(x => x.CodigoTransportadora, transportadora.CodigoTransportadora)
+                .Set(x => x.DescricaoTransportadora, transportadora.DescricaoTransportadora)
+                .Set(x => x.Cnpj, transportadora.Cnpj)
+                .Set(x => x.Email, transportadora.Email)
+                .Set(x => x.Endereco, transportadora.Endereco);
 
-            if (novaTransportadora != null)
+            await _contexto.Collection.UpdateOneAsync(filtro, updateDefenition, new UpdateOptions
             {
-                await _contexto.Collection.ReplaceOneAsync(filtro, transportadora);
-                return transportadora;
-            }
-            await _contexto.Collection.InsertOneAsync(transportadora);
+                IsUpsert = true
+
+            });
             return transportadora;
         }
         public async Task Excluir(Transportadora transportadora)

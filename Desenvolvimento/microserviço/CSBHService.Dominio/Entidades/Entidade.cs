@@ -4,7 +4,7 @@ using System;
 
 namespace CSBHService.Dominio.Entidades
 {
-    public abstract class Entidade
+    public abstract class Entidade 
     {
         protected Entidade()
         {

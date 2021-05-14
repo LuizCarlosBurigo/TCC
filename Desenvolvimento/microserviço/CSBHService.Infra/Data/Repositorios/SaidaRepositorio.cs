@@ -23,14 +23,20 @@ namespace CSBHService.Infra.Data.Repositorios
                 x.CodigoFilial == saida.CodigoFilial &&
                 x.CodigoSaida == saida.CodigoSaida;
 
-            Saida novaSaida = _contexto.Collection.Find(filtro).FirstOrDefault();
+            var updateDefenition = Builders<Saida>.Update
+                .SetOnInsert(x => x.CodigoEmpresa, saida.CodigoEmpresa)
+                .Set(x => x.CodigoFilial, saida.CodigoFilial)
+                .Set(x => x.CodigoSaida, saida.CodigoSaida)
+                .Set(x => x.CodigoTranspotadora, saida.CodigoTranspotadora)
+                .Set(x => x.Total, saida.Total)
+                .Set(x => x.Frete, saida.Frete)
+                .Set(x => x.Imposto, saida.Imposto);
 
-            if (novaSaida != null)
+            await _contexto.Collection.UpdateOneAsync(filtro, updateDefenition, new UpdateOptions
             {
-                await _contexto.Collection.ReplaceOneAsync(filtro, saida);
-                return saida;
-            }
-            await _contexto.Collection.InsertOneAsync(saida);
+                IsUpsert = true
+
+            });
             return saida;
         }
 

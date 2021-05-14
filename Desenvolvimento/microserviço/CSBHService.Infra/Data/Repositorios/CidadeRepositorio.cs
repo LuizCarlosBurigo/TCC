@@ -23,14 +23,16 @@ namespace CSBHService.Infra.Data.Repositorios
                 x.Uf == cidade.Uf &&
                 x.DescricaoCidade == cidade.DescricaoCidade;
 
-            Cidade novaCidade = _contexto.Collection.Find(filtro).FirstOrDefault();
+            var updateDefenition = Builders<Cidade>.Update
+                .SetOnInsert(x => x.CodigoCidade, cidade.CodigoCidade)
+                .Set(x => x.Uf, cidade.Uf)
+                .Set(x => x.DescricaoCidade, cidade.DescricaoCidade);
 
-            if (novaCidade != null)
+            await _contexto.Collection.UpdateOneAsync(filtro, updateDefenition, new UpdateOptions
             {
-                await _contexto.Collection.ReplaceOneAsync(filtro, cidade);
-                return cidade;
-            }
-            await _contexto.Collection.InsertOneAsync(cidade);
+                IsUpsert = true
+
+            });
             return cidade;
         }
 

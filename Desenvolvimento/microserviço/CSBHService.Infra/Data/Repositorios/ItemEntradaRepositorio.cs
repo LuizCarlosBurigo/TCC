@@ -24,14 +24,21 @@ namespace CSBHService.Infra.Data.Repositorios
                 x.CodigoProduto == item.CodigoProduto &&
                 x.Sequencia == item.Sequencia;
 
-            ItemEntrada novaItem = _contexto.Collection.Find(filtro).FirstOrDefault();
+            var updateDefenition = Builders<ItemEntrada>.Update
+                .SetOnInsert(x => x.CodigoEmpresa, item.CodigoEmpresa)
+                .Set(x => x.CodigoFilial, item.CodigoFilial)
+                .Set(x => x.CodigoEntrada, item.CodigoEntrada)
+                .Set(x => x.CodigoProduto, item.CodigoProduto)
+                .Set(x => x.Sequencia, item.Sequencia)
+                .Set(x => x.Lote, item.Lote)
+                .Set(x => x.Quantidade, item.Quantidade)
+                .Set(x => x.Frete, item.Frete);
 
-            if (novaItem != null)
+            await _contexto.Collection.UpdateOneAsync(filtro, updateDefenition, new UpdateOptions
             {
-                await _contexto.Collection.FindOneAndReplaceAsync(filtro, item);
-                return item;
-            }
-            await _contexto.Collection.InsertOneAsync(item);
+                IsUpsert = true
+
+            });
             return item;
         }
 

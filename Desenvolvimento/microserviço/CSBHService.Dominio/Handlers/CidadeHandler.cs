@@ -41,6 +41,13 @@ namespace CSBHService.Dominio.Handlers
             //Salvar informações
             try
             {
+                //Excluir
+                if (command.Acao == "D")
+                {
+                    _cidadeRepositorio.Excluir(cidade);
+                    return new CommandResult(true, "Mensagem persistida com sucesso");
+                }
+                //Gravar ou regravar
                  _cidadeRepositorio.InseririOuAtualizar(cidade);
                 return new CommandResult(true, "Mensagem persistida com sucesso");
             }

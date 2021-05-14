@@ -6,6 +6,7 @@ namespace CSBHService.Dominio.ObjetoValor
 {
     public class DescricaoEndereco
     {
+        [BsonElement("telefones")]
         private readonly IList<Telefone> _telefones;
         public DescricaoEndereco(int codigoCidade, 
                                  string endereco, 
@@ -30,7 +31,6 @@ namespace CSBHService.Dominio.ObjetoValor
         public string Bairro { get; private set; }
         [BsonElement("cep")]
         public string Cep { get; private set; }
-        [BsonElement("telefones")]
         public IReadOnlyCollection<Telefone> Telefones => _telefones.ToArray();
 
         public void AddTelefone(Telefone novoTelefone)

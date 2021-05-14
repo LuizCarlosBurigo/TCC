@@ -23,13 +23,23 @@ namespace CSBHService.Infra.Data.Repositorios
                 x.CodigoEntrada == entrada.CodigoEntrada &&
                 x.CodigoTransportadora == entrada.CodigoTransportadora;
 
-            Entrada novaEntrada = _contexto.Collection.Find(filtro).FirstOrDefault();
-            if (novaEntrada != null)
+            var updateDefenition = Builders<Entrada>.Update
+                .SetOnInsert(x => x.CodigoEmpresa, entrada.CodigoEmpresa)
+                .Set(x => x.CodigoFilial, entrada.CodigoFilial)
+                .Set(x => x.CodigoEntrada, entrada.CodigoEntrada)
+                .Set(x => x.CodigoTransportadora, entrada.CodigoTransportadora)
+                .Set(x => x.DataPedido, entrada.DataPedido)
+                .Set(x => x.EntradaPedido, entrada.EntradaPedido)
+                .Set(x => x.Total, entrada.Total)
+                .Set(x => x.Frete, entrada.Frete)
+                .Set(x => x.NumeroNotaFiscal, entrada.NumeroNotaFiscal)
+                .Set(x => x.SerieNotaFiscal, entrada.SerieNotaFiscal);
+
+            await _contexto.Collection.UpdateOneAsync(filtro, updateDefenition, new UpdateOptions
             {
-                await _contexto.Collection.FindOneAndReplaceAsync(filtro, entrada);
-                return entrada;
-            }
-            await _contexto.Collection.InsertOneAsync(entrada);
+                IsUpsert = true
+
+            });
             return entrada;
         }
 
